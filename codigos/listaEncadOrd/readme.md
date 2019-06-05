@@ -1,0 +1,1 @@
+Lista encadeada Estática Ordenada
