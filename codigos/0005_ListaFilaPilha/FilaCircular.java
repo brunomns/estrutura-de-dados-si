@@ -51,13 +51,27 @@ public class FilaCircular {
 
         //remove do inicio
         public Pessoa remove(){
-
-            int r = inicio;
-            Pessoa aux = fila[r];
-            fila[r] = null;
-            inicio = proximo(inicio);
-            System.out.println("Removendo... "+aux.toString());
-            return aux;
+            if (inicio == -1){
+                    System.out.println("Fila Vazia");
+                    return null;
+            }
+            else{
+                    if (inicio == fim){
+                       Pessoa p = fila[inicio]
+                       fila[inicio] = null;
+                       inicio = -1;
+                       fim = -1;
+                       return p;    
+                    }
+                    else{
+                            int r = inicio;
+                            Pessoa aux = fila[r];
+                            fila[r] = null;
+                            inicio = proximo(inicio);                    
+                            System.out.println("Removendo... "+aux.toString());
+                            return aux;
+                    }
+            }
         }
 
 
