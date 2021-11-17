@@ -6,4 +6,8 @@ public class No{
       this.obj = o;
     }
 
+    public String toString(){
+      return this.obj.toString();
+    }
+
 }
