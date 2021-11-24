@@ -23,6 +23,22 @@ class Main {
     li.imprimeLista();
     li.remove("Dado");
     li.imprimeLista();
+    
+    System.out.println(" ---- LISTA de carros----");
+    Lista listaCarros = new Lista();
+
+    CarroF1 c1 = new CarroF1();
+    c1.cadastra("Mercedes", "Mercedes 1.6 V6", "Pirelli", "Preto", "Hamilton", "Bottas", 650.0f);
+
+    listaCarros.insere(new No(c1));
+
+
+    CarroF1 c2 = new CarroF1();
+    c2.cadastra("Aston Martin", "Mercedes 1.6 V6", "Pirelli", "Verde", "Vettel", "Stroll", 655);
+
+    listaCarros.insere(new No(c2));
+
+    listaCarros.imprimeLista();
 
 
   }
